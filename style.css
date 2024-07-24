@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+/* Inicio de Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E30613;
+    position: fixed;
+    
+
+}
+
+.img-logo {
+    display: flex;
+    align-items: center;
+}
+
+.imagen-logo {
+    margin-left: 18px;
+    width: 157px;
+}
+
+header i {
+
+    color: rgb(240, 248, 255);
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.categoria {
+    color: white;
+
+}
+
+.icon-categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.search-input {
+    display: flex;
+    width: 550px;
+    height: 36px;
+    border-radius: 140px;
+    font-size: 15px;
+    border: none;
+
+
+
+}
+
+.buttom-search {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    background: #D52B1E;
+
+
+
+}
+
+.buttom-search .fa-magnifying-glass {
+    color: #f5f1f1;
+}
+
+nav {
+   
+
+
+}
+
+.lista {
+    display: flex;
+   
+
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.items i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.icon-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.9rem;
+    align-items:center;
+    
+}
+.span-icon{
+    width: 160px;
+    
+}
+.span-icon .txt-right{
+    
+    
+    
+}
+.txt {
+    display: flex;
+
+
+
+}
+ul{
+    display: flex;
+    gap: 16px;
+}
+
+ul li {
+    display: flex;
+    
+    
+
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+
+/*  Section Principal  */
+.slider {
+    display: flex;
+    width: 100%;
+    padding-top: 87px;
+    /* height: 80%; */
+
+}
+
+.sliders {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.sliders li {
+    display: flex;
+    list-style: none;
+
+}
+
+.slider li img {
+    width: 100%;
+}
+
+
+/* Card Productos Ofertas */
+
+.conteiner-card {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.section-card {
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+.cards {
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 10px;
+
+
+
+}
+
+.imagen img {
+    width: 100%;
+    height: 200px;
+    border-radius: 60%;
+
+}
+
+.imagen img:hover {
+    box-shadow: 2px 2px 25px 0px #2724243f;
+}
+
+
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.card-title {
+    font-size: 1.3rem;
+}
+
+.card-descripcion {
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* Section About informativa */
+
+.section-about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #ffffff;
+
+}
+
+.container-about {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+   justify-content: center;
+}
+
+
+.about .about-title {
+    display: flex;
+    justify-content: center;
+   flex-direction: column; 
+   align-items: center;
+    color: #656564;
+    gap: 20px;
+}
+
+.parrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafo-info {
+    font-size: 20px;
+}
+
+
+
+/* Segunda Section Informativa  */
+.container-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+   margin-top: 34px;
+   
+}
+
+
+.card-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-txt-info {
+    width: 250px;
+    height: 100px; 
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 16px;
+     box-shadow: 2px 2px 25px 0px #656564;;
+
+
+}
+
+
+.card-title-info {
+display: flex;
+font-size: 35px;
+color: #E30613;
+
+}
+.card-descripcion-info {
+    font-size: 16px;
+}
+
+/* Section Adicional  */
+.section-adiconal {
+    width: 100%;
+    height: 60vh;
+
+}
+.container-adicional {
+}
+.box-adic {
+    background-color: #E30613;
+}
+.adic-title {
+}
+.text-title {
+}
+.text-parrafo {
+}
+.text-buttom {
+}
+
+footer {
+    background-color: gray;
+    width: 100%;
+    height: 30%;
+}
