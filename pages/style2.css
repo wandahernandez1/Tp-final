@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #E30613;
-    position: fixed;
+    
     
 
 }
@@ -71,8 +71,6 @@ header i {
     font-size: 15px;
     border: none;
 
-
-
 }
 
 .buttom-search {
@@ -83,38 +81,17 @@ header i {
     border: none;
     border-radius: 100%;
     background: #D52B1E;
-
-
-
 }
 
 .buttom-search .fa-magnifying-glass {
     color: #f5f1f1;
 }
 
-nav {
-   
 
 
-}
-
-.lista {
-    display: flex;
-   
-
-}
-
-.items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
 
 .items i {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
    
@@ -124,34 +101,19 @@ nav {
 .icon-txt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     font-size: 0.9rem;
-    align-items:center;
+   
     
 }
-.span-icon{
-    width: 160px;
-    
-}
-.span-icon .txt-right{
-    
-    
-    
-}
-.txt {
-    display: flex;
 
-
-
-}
 ul{
     display: flex;
-    gap: 16px;
+ 
 }
 
 ul li {
     display: flex;
-    
+    padding: 16px 10px;
     
 
 
@@ -161,4 +123,65 @@ ul li a {
     text-decoration: none;
     color: aliceblue;
 
+}
+
+/* --------------------------CARDS DE PRODUCTOS------------------------------- */
+.section-productos{
+   width: 100%;
+    padding-top: 10px; 
+}
+.container-padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.container-producto1 {
+    display: flex;
+  
+
+    
+}
+.card-producto{
+    width: 220px;
+    height: 350px;
+    box-shadow: 2px 2px 25px 0px #2724243f;
+  
+    
+    
+}
+
+.txt-producto{
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+
+   
+}
+.title-card{
+    color: #c2c0c0;
+   
+}
+.p-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #726b6b;
+   
+
+}
+.img-producto {
+   
+   width: 220px;
+   height: 250px;
+   
+}
+.input-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }

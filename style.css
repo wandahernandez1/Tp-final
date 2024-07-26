@@ -7,10 +7,13 @@
 }
 
 
-
+body{
+ 
+}
 /* Inicio de Header */
 .header {
     width: 100%;
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,6 +55,7 @@ header i {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 
 
 }
@@ -70,6 +74,7 @@ header i {
     border-radius: 140px;
     font-size: 15px;
     border: none;
+    cursor: pointer;
 
 
 
@@ -83,6 +88,7 @@ header i {
     border: none;
     border-radius: 100%;
     background: #D52B1E;
+    cursor: pointer;
 
 
 
@@ -114,7 +120,6 @@ nav {
 
 .items i {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
    
@@ -124,37 +129,19 @@ nav {
 .icon-txt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     font-size: 0.9rem;
-    align-items:center;
     
 }
-.span-icon{
-    width: 160px;
-    
-}
-.span-icon .txt-right{
-    
-    
-    
-}
-.txt {
-    display: flex;
 
-
-
-}
 ul{
     display: flex;
-    gap: 16px;
 }
+
+
 
 ul li {
     display: flex;
-    
-    
-
-
+    padding: 16px 10px;
 }
 
 ul li a {
@@ -221,11 +208,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
     margin: 10px;
-
-
-
 }
 
 .imagen img {
@@ -254,7 +237,6 @@ ul li a {
 }
 
 .card-descripcion {
-    align-items: center;
     font-size: 1rem;
 }
 
@@ -300,6 +282,8 @@ background-color: #ffffff;
 
 
 /* Segunda Section Informativa  */
+
+
 .container-card-info{
     display: flex;
     flex-direction: column;
@@ -309,12 +293,19 @@ background-color: #ffffff;
    
 }
 
-
-.card-info {
+.container-card{
     display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    padding: 20px;
+    gap: 15px;
+    
+}
+.card-info {
+     display: flex;
     align-items: center;
     gap: 10px;
-}
+} 
 .card-txt-info {
     width: 250px;
     height: 100px; 
@@ -335,31 +326,116 @@ color: #E30613;
 
 }
 .card-descripcion-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
 }
 
 /* Section Adicional  */
 .section-adiconal {
-    width: 100%;
-    height: 60vh;
+    display: flex;
+   
+    
 
 }
 .container-adicional {
+    width: 100%;
+    height: 80vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #ffffff;
+   
+
+
 }
 .box-adic {
+    width: 84%;
+    height: 39vh;
+    display: flex;
+    justify-content: center;
     background-color: #E30613;
+    border-radius: 27px;
 }
 .adic-title {
-}
-.text-title {
-}
-.text-parrafo {
-}
-.text-buttom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
-footer {
-    background-color: gray;
-    width: 100%;
-    height: 30%;
+.text-title  {
+    font-size: 28px;
+    margin: 28px 0px 0px;
+   color: #ffffff;
+
 }
+.text-parrafo {
+    font-size: 24px;
+   color: #ffffff;
+}
+.text-buttom {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 11.97px 28.67;
+    width:70%;
+    border-radius: 5px;
+   
+   
+}
+
+.text-buttom .btn-adic{
+     font-size: 16px;
+      border: none;
+      background: #ffffff;
+      cursor: pointer;
+      color: #D52B1E;
+      font-weight: 600;
+      
+   
+}
+
+
+/* ----------------------footer------------------ */
+
+.footer {
+    background-color: #656564;
+   
+   padding: 80px 0;
+}
+.container-footer {
+    max-width: 1200px;
+    margin:0 auto;
+    
+    
+   
+}
+.footer-row ul{
+    
+  display: flex;
+ flex-wrap: wrap;
+  
+}
+.footer-link {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-link h4{
+   font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px ;
+    display: inline-block;
+ }
+ .footer-link ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #f5f1f1;
+    display: block;
+    margin-bottom: 15px;
+
+ }
