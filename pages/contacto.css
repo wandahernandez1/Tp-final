@@ -6,17 +6,15 @@
 
 }
 
-/* Inicio de Header */
+/* -----------------------------Inicio de Header------------------- */
 .header {
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #E30613;
     position: fixed;
-
-
+    z-index: 1000;
 }
 
 .img-logo {
@@ -30,20 +28,16 @@
 }
 
 header i {
-
     color: rgb(240, 248, 255);
 }
 
 .contenido {
     display: flex;
     align-items: center;
-
-
 }
 
 .categoria {
     color: white;
-
 }
 
 .icon-categoria {
@@ -53,14 +47,12 @@ header i {
     gap: 10px;
     cursor: pointer;
 
-
 }
 
 .search {
     display: flex;
     align-items: center;
     position: relative;
-
 }
 
 .search-input {
@@ -71,9 +63,6 @@ header i {
     font-size: 15px;
     border: none;
     cursor: pointer;
-
-
-
 }
 
 .buttom-search {
@@ -85,9 +74,6 @@ header i {
     border-radius: 100%;
     background: #D52B1E;
     cursor: pointer;
-
-
-
 }
 
 .buttom-search .fa-magnifying-glass {
@@ -136,22 +122,22 @@ ul li a {
 /* -----------------------Formulario------------------------- */
 
 section.formulario {
-   display: flex;
+    display: flex;
 }
 
 .container-formulario {
     width: 100%;
     height: 80vh;
-  margin: 80px auto;
-  border-radius: 10px;  
-  padding-top: 30px;
-  padding-right: 20px;  
-  padding-left: 30px;
-   
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 30px;
+
 }
 
 .form {
-     display: flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -161,52 +147,99 @@ section.formulario {
 }
 
 .box-input {
-     width: 50%; 
+    width: 50%;
     height: 50%;
-    border-radius: 10px;  
+    border-radius: 10px;
     padding-top: 30px;
-    padding-bottom: 20px;  
-    background:url(../img/carrito.avif) no-repeat center/cover;
-    padding-left: 30px; 
+    padding-bottom: 20px;
+    background: url(../img/carrito.avif) no-repeat center/cover;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    
+
 }
 
 .container-input {
-    background-color: #fbfbfba1; 
-    width: 60%; 
-    height: 60px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
+    background-color: #fbfbfba1;
+    width: 60%;
+    height: 60px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
     border-color: #d52a1e69;
 }
+
 div .container-input {
     display: flex;
     justify-content: center;
-   align-items: center;
-   gap: 10px;
- 
+    align-items: center;
+    gap: 10px;
+}
+
+#buttomEnviar {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #D52B1E;
+    border-color: #D52B1E;
+    border-style: solid;
+    border-radius: 10px;
+    width: 400px;
+    cursor: pointer;
+}
+
+/* -------------------NEWSLETTE------------------------------- */
+.container-newslette {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    gap: 20px;
+    padding-top: 37px;
+    background-color: #f5f5f5;
+}
+
+.txt-newslette {
+    display: flex;
+    align-items: center;
+}
+
+.txt-newslette h4 {
+    color: #E30613;
 
 }
 
- #buttomEnviar{
-    height: 45px; 
-  padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
-  background-color: #D52B1E; 
-  border-color:#D52B1E; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 400px;   
-  cursor: pointer;
- }
+.input-newslette {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
 
+.email {
+    width: 400px;
+    height: 36px;
+    border-radius: 70px;
+    font-size: 16px;
+    border-style: solid;
+    text-align: start;
+    border-width: 1px;
+    border-color: #D52B1E;
+}
+
+.suscribirme {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 70px;
+    background-color: #E30613;
+    color: white;
+    position: absolute;
+    right: 1px;
+}
 
 /* ----------------------footer------------------ */
 
@@ -274,10 +307,11 @@ div .container-input {
 }
 
 .derechos-reservados {
-    color: #fafafa;
-    background-color: #b4aeae;
+    color: #D52B1E;
+    background-color: #f5f5f5;
     padding: 15px 10px;
     text-align: center;
+    font-weight: 600;
 
 }
 

@@ -238,7 +238,7 @@ input#cantidadProducto0,
     text-align: center;
 }
 
-.btn-agregar{
+.btn-agregar {
     border: none;
     font-size: 15px;
     width: 190px;
@@ -250,26 +250,117 @@ input#cantidadProducto0,
 }
 
 
-.carrito{
+.carrito {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
 
-background-color: #D52B1E;
-display: flex;
-flex-direction: column;
-justify-content: center;
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    background-color: #ece8e8;
+    width: 100%;
+    height: 100%;
+}
+
+.txt-carrito {
+    padding: 10px;
+    font-size: 20px;
+    color: #D52B1E;
+}
+
+hr {
+    height: 3px;
+    background-color: black;
+}
+
+.listCarrito {
+    display: flex;
+    justify-content: center;
+    background-color: #ece8e8;
+    font-size: 19px;
+    font-weight: 600;
+    color: #D52B1E;
+}
+
+.buttomTotal {}
+
+/* ----------Estilos dede JS---------------------- */
+.productos-lista {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20;
+
+}
+
+.carrito-item {
+    font-size: 20px;
+    color: #D52B1E;
+}
+
+
+.total-compra {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: #726b6b;
+}
+
+
+.container-newslette {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    gap: 20px;
+    padding-top: 37px;
+    background-color: #f5f5f5;
+
+}
+
+.txt-newslette {
+    display: flex;
+    align-items: center;
+
+}
+
+.txt-newslette h4 {
+    color: #E30613;
+
+}
+
+.input-newslette {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.email {
+    width: 400px;
+    height: 36px;
+    border-radius: 70px;
+    font-size: 16px;
+    border-style: solid;
+    text-align: start;
+    border-width: 1px;
+    border-color: #D52B1E;
 
 
 }
-.carrito-item{
-background-color: #5f5f5f;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
-.total-compra{
-background-color: rgba(134, 238, 134, 0.815);
-text-align: center;
+
+.suscribirme {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 70px;
+    background-color: #E30613;
+    color: white;
+    position: absolute;
+    right: 1px;
 }
 
 
@@ -337,11 +428,13 @@ text-align: center;
     margin: 0 10px 10px 0;
     line-height: 40px;
 }
+
 .derechos-reservados {
-    color: #fafafa;
-    background-color: #b4aeae;
+    color: #D52B1E;
+    background-color: #f5f5f5;
     padding: 15px 10px;
     text-align: center;
+    font-weight: 600;
 
 }
 

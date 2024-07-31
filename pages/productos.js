@@ -12,9 +12,9 @@ let arrPrecioProducto = [2240, 1960, 3740, 1750, 14975,
 let arrStock = [5, 3, 10, 20, 9, 6, 1, 4, 8, 7];
 
 let arrImagenes = ["../img/producto1.webp", "../img/producto2.jpg", "../img/producto3.webp",
-                  "../img/producto4.webp", "../img/producto5.jpg", "../img/producto6.jpg",
-                  "../img/producto7.webp", "../img/producto8.webp", "../img/producto9.webp",
-                                                                  "../img/producto10.webp"];
+    "../img/producto4.webp", "../img/producto5.jpg", "../img/producto6.jpg",
+    "../img/producto7.webp", "../img/producto8.webp", "../img/producto9.webp",
+    "../img/producto10.webp"];
 
 let carrito = [];
 
@@ -58,7 +58,7 @@ function crearCard(producto, precios, stock, imagenes) {
 
         const stockProducto = document.createElement('p');
         stockProducto.textContent = 'Stock: ' + stock[i];
-        stockProducto.id='stockProducto' + [i];
+        stockProducto.id = 'stockProducto' + [i];
         txtProducto.appendChild(stockProducto);
 
         const totalSpan = document.createElement('span');
@@ -93,68 +93,78 @@ function crearCard(producto, precios, stock, imagenes) {
 
     //Creo el evento EventListener para el boton
     let sumaPrecios = 0;
-    let botonAgregar= document.querySelectorAll('.btn-agregar');
+    let botonAgregar = document.querySelectorAll('.btn-agregar');
     for (let i = 0; i < botonAgregar.length; i++) {
-        botonAgregar[i].addEventListener('click', ()=> {
-        let cantidadInput= document.getElementById('cantidadProducto' + [i])
-        let cantidad = 0;
+        botonAgregar[i].addEventListener('click', () => {
+            let cantidadInput = document.getElementById('cantidadProducto' + [i])
+            let cantidad = 0;
 
-        if(cantidadInput){
-            cantidad = cantidadInput.value;
-        } 
-        if (cantidad <= 0) {
-            alert('Porfavor, ingrese una cantidad valida.');
-            return;
-        }
-        if (cantidad <= arrStock[i]) {
-            arrStock[i] -= cantidad; //Me va a disminuir el stock
-            let stockProducto = document.getElementById('stockProducto' + [i]);
-            if (stockProducto) {
-                stockProducto.textContent= 'Stock: '+ arrStock[i];
+            if (cantidadInput) {
+                cantidad = cantidadInput.value;
             }
-            
-            let total = cantidad * arrPrecioProducto[i];
-            document.getElementById('total' + [i]).textContent = 'total: $ ' + total;
-            
-            //llamo a la funcion agregar al carrito
-            agregarAlCarrito(arrProductos[i], cantidad, total);
-            alert('Producto agregado al carrito.')
-        } else{
-            alert('No hay suficiente stock disponible.');
-        }
-        sumaPrecios++; //Esto me va a incrementar el contador 
-        //console.log(`Boton clickeado ${sumaPrecios}veces`);
-        
-    
-      });  
+            if (cantidad <= 0) {
+                alert('Porfavor, ingrese una cantidad valida.');
+                return;
+            }
+            if (cantidad <= arrStock[i]) {
+                arrStock[i] -= cantidad; //Me va a disminuir el stock
+                let stockProducto = document.getElementById('stockProducto' + [i]);
+                if (stockProducto) {
+                    stockProducto.textContent = 'Stock: ' + arrStock[i];
+                }
+
+                let total = cantidad * arrPrecioProducto[i];
+                document.getElementById('total' + [i]).textContent = 'total: $ ' + total;
+
+                //llamo a la funcion agregar al carrito
+                agregarAlCarrito(arrProductos[i], cantidad, total);
+                alert('Producto agregado al carrito.')
+            } else {
+                alert('No hay suficiente stock disponible.');
+            }
+            sumaPrecios++; //Esto me va a incrementar el contador 
+            //console.log(`Boton clickeado ${sumaPrecios}veces`);
+
+
+        });
     }
 }
 
 //Creamos una funcion para agregar al carrito los productos
 
-function agregarAlCarrito(producto,cantidad,total) {
-    carrito.push({producto,cantidad,total});
+function agregarAlCarrito(producto, cantidad, total) {
+    carrito.push({ producto, cantidad, total });
     actualizarCarrito();
 }
 
 function actualizarCarrito() {
- const carritoDiv = document.getElementById('carrito');
- carritoDiv.innerHTML = '';
- let totalCompra=0;
- for (let i = 0; i < carrito.length; i++) {
-    const contenidoCarrito = carrito[i];
+    const productosLista = document.getElementById('productos-lista');
+    productosLista.innerHTML = '';
 
-    const itemDiv = document.createElement('div');
-    itemDiv.className='carrito-item';
-    itemDiv.textContent= `${contenidoCarrito.producto} - Cantidad: ${contenidoCarrito.cantidad} - Total $ ${contenidoCarrito.total}`;
-    carritoDiv.appendChild(itemDiv);
+    let totalCompra = 0;
+    for (let i = 0; i < carrito.length; i++) {
+        const contenidoCarrito = carrito[i];
 
-    totalCompra += contenidoCarrito.total;
- }   
- const totalDiv = document.createElement('div');
- totalDiv.className = 'total-compra';
- totalDiv.textContent= `Total de la compra: $ ${totalCompra}`;
- carritoDiv.appendChild(totalDiv);
+        const itemList = document.createElement('li');
+        itemList.className = 'carrito-item';
+        itemList.textContent = `*NOMBRE:  ${contenidoCarrito.producto}  *UNIDAD: ${contenidoCarrito.cantidad}  
+     *C/u $ ${contenidoCarrito.total / contenidoCarrito.cantidad}`;
+
+
+        productosLista.appendChild(itemList);
+
+        if (i < carrito.length - 1) {
+            // Agregar un separador si no es el último elemento
+            const separador = document.createElement('hr');
+            productosLista.appendChild(separador);
+        }
+
+        totalCompra += contenidoCarrito.total;
+    }
+    const totalDiv = document.createElement('total-compra');
+    totalDiv.className = 'total-compra';
+    totalDiv.textContent = `Total de la compra: $ ${totalCompra}`;
+    productosLista.appendChild(totalDiv);
 }
 
 // Llamada a la función para crear las tarjetas
