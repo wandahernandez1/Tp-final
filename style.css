@@ -5,22 +5,14 @@
     font-family: "Montserrat", sans-serif;
 
 }
-
-
-body{
- 
-}
 /* Inicio de Header */
 .header {
     width: 100%;
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #E30613;
     position: fixed;
-    
-
 }
 
 .img-logo {
@@ -34,20 +26,16 @@ body{
 }
 
 header i {
-
     color: rgb(240, 248, 255);
 }
 
 .contenido {
     display: flex;
     align-items: center;
-
-
 }
 
 .categoria {
     color: white;
-
 }
 
 .icon-categoria {
@@ -56,15 +44,12 @@ header i {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-
-
 }
 
 .search {
     display: flex;
     align-items: center;
     position: relative;
-
 }
 
 .search-input {
@@ -75,9 +60,6 @@ header i {
     font-size: 15px;
     border: none;
     cursor: pointer;
-
-
-
 }
 
 .buttom-search {
@@ -89,97 +71,64 @@ header i {
     border-radius: 100%;
     background: #D52B1E;
     cursor: pointer;
-
-
-
 }
 
 .buttom-search .fa-magnifying-glass {
     color: #f5f1f1;
 }
 
-nav {
-   
-
-
-}
-
 .lista {
     display: flex;
-   
-
 }
 
 .items {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .items i {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-
 }
 
 .icon-txt {
     display: flex;
     flex-direction: column;
     font-size: 0.9rem;
-    
 }
 
 ul{
     display: flex;
 }
-
-
-
 ul li {
     display: flex;
     padding: 16px 10px;
 }
-
 ul li a {
     text-decoration: none;
     color: aliceblue;
-
 }
 
-
-/*  Section Principal  */
+/*-------------  Section Principal --------------------- */
 .slider {
     display: flex;
     width: 100%;
     padding-top: 87px;
     /* height: 80%; */
-
 }
 
 .sliders {
     display: flex;
     justify-content: center;
-
-
-
 }
-
-.sliders li {
-    display: flex;
-    list-style: none;
-
-}
-
-.slider li img {
+.slider  img {
     width: 100%;
 }
 
 
-/* Card Productos Ofertas */
+/* --------------------------Card Productos Ofertas-------------------------- */
 
 .conteiner-card {
     display: flex;
@@ -188,21 +137,14 @@ ul li a {
     gap: 10px;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .section-card {
     display: flex;
     justify-content: center;
-
-
-
-
 }
 
 .cards {
-
     width: 300px;
     height: 300px;
     display: flex;
@@ -215,14 +157,11 @@ ul li a {
     width: 100%;
     height: 200px;
     border-radius: 60%;
-
 }
 
 .imagen img:hover {
     box-shadow: 2px 2px 25px 0px #2724243f;
 }
-
-
 
 .card-txt {
     display: flex;
@@ -240,21 +179,20 @@ ul li a {
     font-size: 1rem;
 }
 
-/* Section About informativa */
+/*--------------------Section About informativa -----------------------*/
 
 .section-about {
     width: 100%;
-    height: 90vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
-background-color: #ffffff;
-
+    background-color: #ffffff;
 }
 
 .container-about {
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     display: flex;
    justify-content: center;
 }
@@ -279,10 +217,7 @@ background-color: #ffffff;
     font-size: 20px;
 }
 
-
-
-/* Segunda Section Informativa  */
-
+/* ------------------------ Segunda Section Informativa ----------------------- */
 
 .container-card-info{
     display: flex;
@@ -290,7 +225,6 @@ background-color: #ffffff;
     gap: 10px;
     width: 100%;
    margin-top: 34px;
-   
 }
 
 .container-card{
@@ -299,7 +233,6 @@ background-color: #ffffff;
     justify-content: center; 
     padding: 20px;
     gap: 15px;
-    
 }
 .card-info {
      display: flex;
@@ -313,17 +246,14 @@ background-color: #ffffff;
     padding: 20px;
     text-align: center;
     border-radius: 16px;
-     box-shadow: 2px 2px 25px 0px #656564;;
-
-
+    box-shadow: 2px 2px 25px 0px #656564;
 }
 
 
 .card-title-info {
-display: flex;
-font-size: 35px;
-color: #E30613;
-
+    display: flex;
+    font-size: 35px;
+    color: #E30613;
 }
 .card-descripcion-info {
     display: flex;
@@ -332,23 +262,17 @@ color: #E30613;
     font-size: 16px;
 }
 
-/* Section Adicional  */
+/* -------------------------------Section Adicional----------------------------  */
 .section-adiconal {
     display: flex;
-   
-    
-
 }
 .container-adicional {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
    display: flex;
    align-items: center;
    justify-content: center;
    background-color: #ffffff;
-   
-
-
 }
 .box-adic {
     width: 84%;
@@ -382,60 +306,125 @@ color: #E30613;
     padding: 11.97px 28.67;
     width:70%;
     border-radius: 5px;
-   
-   
 }
 
 .text-buttom .btn-adic{
-     font-size: 16px;
-      border: none;
-      background: #ffffff;
-      cursor: pointer;
-      color: #D52B1E;
-      font-weight: 600;
-      
+    font-size: 16px;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    color: #D52B1E;
+    font-weight: 600;
+}
+.container-newslette {
+    display: flex;
+   justify-content: center;
+    width: 100%;
+    height: 80px;
+    gap: 20px;
    
 }
+.txt-newslette {
+    display: flex;
+    align-items: center;
+    
+}
+.txt-newslette h4{
+     color: #E30613;
 
+}
+.input-newslette{
+display: flex;
+position: relative; 
+align-items: center;
+}
+.email {
+    width: 400px;
+    height: 36px;
+    border-radius: 70px;
+    font-size: 16px;
+    border-style:solid ;
+    text-align: start;
+    border-width: 1px;
+    border-color: #D52B1E;
+    
+    
+}
+.suscribirme {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 70px;
+    background-color: #E30613;
+    color: white;
+    position: absolute;  
+    right: 1px; 
+}
 
 /* ----------------------footer------------------ */
 
 .footer {
-    background-color: #656564;
-   
+    width: 100%;
+    height: 90%;
+    background-color: #f5f5f5;
    padding: 80px 0;
 }
 .container-footer {
-    max-width: 1200px;
+    width: 80%;
     margin:0 auto;
-    
-    
-   
 }
-.footer-row ul{
-    
+.footer-row {
   display: flex;
  flex-wrap: wrap;
-  
+ 
 }
 .footer-link {
     width: 25%;
     padding: 0 15px;
 }
+.footer-link ul{
+    flex-direction: column;
+}
 .footer-link h4{
    font-size: 20px;
-    color: white;
+    color: #5f5f5f;
     margin-bottom: 25px;
     font-weight: 500;
-    border-bottom: 2px solid #00c3ff;
+    border-bottom: 2px solid #707070;
     padding-bottom: 10px ;
     display: inline-block;
  }
  .footer-link ul li a{
     font-size: 18px;
     text-decoration: none;
-    color: #f5f1f1;
+    color: #b4aeae;
     display: block;
     margin-bottom: 15px;
 
  }
+ .footer-link ul li a:hover{
+    color: #9c9999;
+    padding-left: 6px;
+ }
+ .social-link i{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #656564;
+    border-radius: 50%;
+   color: #ffffff;
+    text-align: center;
+    margin: 0 10px 10px 0 ;
+    line-height: 40px;
+ }
+ .derechos-reservados {
+    color: #fafafa;
+    background-color: #b4aeae;
+    padding: 15px 10px;
+    text-align: center;
+
+}
+
+small {
+    font-size: 17px;
+}

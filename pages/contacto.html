@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA Online - Supermercados DIA</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="icon-dia">
+    <link rel="stylesheet" href="../pages/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--------------------------- Inicio Header ---------------------------------------->
+    <header class="header">
+        <div class="img-logo">
+            <a href="../index.html"><img src="../img/logo.png" class="imagen-logo"></a>
+            <div class="contenido">
+                <div class="icon-categoria">
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <p class="categoria"> Categorías</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="search">
+            <input class="search-input" type="search" placeholder=" ¿En que podemos ayudarte?">
+            <button class="buttom-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <nav>
+            <div class="lista">
+                <ul class="items">
+                    <li>
+                        <p class="icon-txt">
+                            <a href="/index.html"><i class="fa-solid fa-rotate-right"></i></a>
+                            <a href="/index.html" class="txt-right">Inicio</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="icon-txt">
+                            <a href="../pages/productos.html"><i class="fa-solid fa-cart-shopping"></i></a> </i>
+                            <a href="../pages/productos.html" class="txt">Productos</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="icon-txt">
+                            <a href="../pages/contacto.html"><i class="fa-regular fa-user"></i></a>
+                            <a href="../pages/contacto.html" class="txt">Contacto</a>
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ------------------------------------Formulario de Contacto------------------------------ -->
+    <section class="formulario">
+        <div class="container-formulario">
+            <div class="title-form">
+                <h1>Formulario de Contacto</h1>
+                <h3>Escríbenos y en Breve nos pondremos en contacto contigo</h3>
+            </div>
+
+            <form action="../pages/contacto.html" class="form">
+                <div class="box-input">
+                    <div class="container-input">
+                        <label for="nombre" class="nombre"> Nombre: </label>
+                        <input type="text" name="introducir-nombre" id="inputNombre" placeholder="Nombre"
+                            required="obligatorio">
+
+                    </div>
+
+                    <div class="container-input">
+                        <label for="apellido" class="apellido"> Apellido: </label>
+                        <input type="text" name="introducir-apellido" id="inputApellido" placeholder="Apellido">
+                    </div>
+
+                    <div class="container-input">
+                        <label for="email">Correo electrónico: </label>
+                        <input type="email" id="inputEmail" name="inputEmail" placeholder="Email" required="obligatorio">
+                    </div>
+                    <div class="container-input">
+                        <label for="telefono">Telefono: </label>
+                        <input type="tel" name="telefono" id="inputTelefono"
+                            placeholder="Ej: 2284 123456" required="obligatorio">
+                    </div>
+                    <div class="container-input">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="user_message" id="inputMensaje"
+                            placeholder="Deja aquí tu comentario..."></textarea>
+                    </div>
+
+                    <button type="submit" name="enviar-form" id="buttomEnviar">
+                        <p>Enviar</p>
+                    </button>
+
+
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- -----------------------------footer---------------------------------- -->
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-link">
+                    <h4> Asistencia</h4>
+                    <ul>
+                        <li><a href="#">Cómo comprar</a></li>
+                        <li><a href="#">Metodos de pago</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Ayuda </a></li>
+                        <li><a href="#">Libro de quejas digital (Ley 2247)</a></li>
+                    </ul>
+
+
+                </div>
+
+
+                <div class="footer-link">
+                    <h4> Compras online </h4>
+                    <ul>
+                        <li><a href="#">Ofertas </a></li>
+                        <li><a href="#">Almacen</a></li>
+                        <li><a href="#">Desayuno</a></li>
+                        <li><a href="#">Bebidas </a></li>
+                        <li><a href="#">Frescos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link">
+                    <h4> Institucional</h4>
+                    <ul>
+                        <li><a href="#">App Dia</a></li>
+                        <li><a href="#">Folleto digital</a></li>
+                        <li><a href="#">Tiendas</a></li>
+                        <li><a href="#">Franquicias</a></li>
+                        <li><a href="#">Conoce Dia </a></li>
+                        <li><a href="#">Trabajá en Dia </a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-link">
+                    <h4> Seguinos </h4>
+                    <div class="social-link">
+
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="derechos-reservados">
+            <small> Supermercado Dia 2024 | Todos los Derechos Reservados |
+                Diseñado y Desarrollado por Ruspil Celeste y Hernandez Wanda
+            </small>
+        </div>
+    </footer>
+<!-- --------------------------------CDN DE FILESAVER-------------------------------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+        integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="../pages/contacto.js"></script>
+</body>
+
+</html>

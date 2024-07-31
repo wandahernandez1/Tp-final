@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- Inicio Header -->
+    <!--------------------------- Inicio Header ---------------------------------------->
     <header class="header">
         <div class="img-logo">
             <a href="#"><img src="./img/logo.png" class="imagen-logo"></a>
@@ -35,27 +35,25 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
-
         <nav>
             <div class="lista">
                 <ul class="items">
                     <li>
                         <p class="icon-txt">
-                            <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
-                           <a href="#" class="txt-right">Repetir Pedido</a>
-                        </p>
-                    </li>
-
-                    <li>
-                        <p class="icon-txt">
-                            <a href="#"><i class="fa-regular fa-user"></i></a>
-                            <a href="#" class="txt">Ingresar</a>
+                            <a href="/index.html"><i class="fa-solid fa-rotate-right"></i></a>
+                            <a href="/index.html" class="txt-right">Inicio</a>
                         </p>
                     </li>
                     <li>
                         <p class="icon-txt">
-                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> </i>
-                            <a href="#" class="txt">Carrito</a>
+                            <a href="./pages/productos.html"><i class="fa-solid fa-cart-shopping"></i></a> </i>
+                            <a href="./pages/productos.html" class="txt">Productos</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="icon-txt">
+                            <a href="./pages/contacto.html"><i class="fa-regular fa-user"></i></a>
+                            <a href="./pages/contacto.html" class="txt">Contacto</a>
                         </p>
                     </li>
                 </ul>
@@ -65,20 +63,15 @@
         </nav>
     </header>
 
-    <!-- Section Principal -->
+    <!------------------------------- Section Principal IMAGEN------------------------------------------->
 
     <section class="slider">
         <div class="sliders">
-            <li id="slide1"> <img src="./img/slider.jpg" alt=""></li>
-            <!-- <li id="slide2"><img src="./img/carrusel1.jpg" alt=""> </li>
-            <li id="slide3"> <img src="./img/carrusel2.jpg" alt=""></li> -->
-
+            <img src="./img/slider.jpg" alt="imagen-descuento">
         </div>
-
     </section>
 
-
-    <!-- Card de Productos Ofertas -->
+    <!------------------------------- Card de Productos Ofertas ----------------------------------------->
 
     <main>
         <section class="section-card">
@@ -154,10 +147,10 @@
         </section>
     </main>
 
-    <!-- Segunda Section -->
+    <!------------------------ Segunda Section Informacion Del Supermercado------------------------>
     <section class="section-about">
-       
-       <div class="container-about">
+
+        <div class="container-about">
 
             <div class="about">
                 <div class="about-title">
@@ -167,12 +160,12 @@
                             Una multinacional con alma local
                         </p>
                     </div>
-                </div> 
-           
+                </div>
+
                 <!-- Card Informacion Supermercado -->
                 <div class="container-card-info">
                     <div class="container-card">
-                
+
                         <div class="card-info-card">
                             <div class="card-txt-info">
                                 <h2 class="card-title-info"> 2 </h2>
@@ -181,8 +174,8 @@
                                 </p>
                             </div>
                         </div>
-                
-                
+
+
                         <div class="card-info">
                             <div class="card-txt-info">
                                 <h2 class="card-title-info"> 40 </h2>
@@ -221,31 +214,45 @@
     </section>
 
 
- <!-- Section Adicional -->
-<section class="section-adiconal">
-    <div class="container-adicional">
-        <div class="box-adic">
-            <div class="adic-title">
-                <h1 class="text-title">
-                    ¡Conoce nuestros Productos!
-                </h1>
-                <p class="text-parrafo">
-                    Descubrí las Ofertas y conocé nuestros Beneficios.
-                </p>
-                <buttom class="text-buttom">
-                 <a href="./pages/index2.html">
-                    <input type="button" class="btn-adic" value="Nuestros Productos">
-                </a> 
-                </buttom>
+    <!-- Section Adicional -->
+    <section class="section-adiconal">
+        <div class="container-adicional">
+            <div class="box-adic">
+                <div class="adic-title">
+                    <h1 class="text-title">
+                        ¡Conoce nuestros Productos!
+                    </h1>
+                    <p class="text-parrafo">
+                        Descubrí las Ofertas y conocé nuestros Beneficios.
+                    </p>
+                    <buttom class="text-buttom">
+                        <a href="./pages/productos.html">
+                            <input type="button" class="btn-adic" value="Nuestros Productos">
+                        </a>
+                    </buttom>
+                </div>
+
             </div>
-            
+
         </div>
+    </section>
 
+    <div class="container-newslette">
+        <div class="txt-newslette">
+            <h4>Recibí nuestras promociones y ofertas por mail</h4>
+        </div>
+        <div class="input-newslette">
+            <input type="email" class="email" placeholder="  Ingresa tu email">
+            <input type="button" class="suscribirme" value="Suscribirme">
+        </div>
     </div>
-</section>
 
 
-<footer class="footer">
+
+
+    <!-- -----------------------------footer---------------------------------- -->
+
+    <footer class="footer">
         <div class="container-footer">
             <div class="footer-row">
                 <div class="footer-link">
@@ -257,46 +264,53 @@
                         <li><a href="#">Ayuda </a></li>
                         <li><a href="#">Libro de quejas digital (Ley 2247)</a></li>
                     </ul>
-                </div>
-           
 
-              <div class="footer-link">
-                <h4> Compras online </h4>
-                <ul>
-                    <li><a href="#">Ofertas </a></li>
-                    <li><a href="#">Almacen</a></li>
-                    <li><a href="#">Desayuno</a></li>
-                    <li><a href="#">Bebidas </a></li>
-                    <li><a href="#">Frescos</a></li>
-                </ul>
-              </div>
 
-              <div class="footer-link">
-                <h4> Institucional</h4>
-                <ul>
-                    <li><a href="#">App Dia</a></li>
-                    <li><a href="#">Folleto digital</a></li>
-                    <li><a href="#">Tiendas</a></li>
-                    <li><a href="#">Franquicias</a></li>
-                    <li><a href="#">Conoce Dia </a></li>
-                    <li><a href="#">Trabajá en Dia </a></li>
-                </ul>
-              </div>
-
-            
-              <div class="footer-link">
-                <h4> Seguinos  </h4>
-                <div class="social-link">
-                    <a href="#"><i class="fa-brands fa-instagram"></it></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
 
-               </div>
+
+                <div class="footer-link">
+                    <h4> Compras online </h4>
+                    <ul>
+                        <li><a href="#">Ofertas </a></li>
+                        <li><a href="#">Almacen</a></li>
+                        <li><a href="#">Desayuno</a></li>
+                        <li><a href="#">Bebidas </a></li>
+                        <li><a href="#">Frescos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-link">
+                    <h4> Institucional</h4>
+                    <ul>
+                        <li><a href="#">App Dia</a></li>
+                        <li><a href="#">Folleto digital</a></li>
+                        <li><a href="#">Tiendas</a></li>
+                        <li><a href="#">Franquicias</a></li>
+                        <li><a href="#">Conoce Dia </a></li>
+                        <li><a href="#">Trabajá en Dia </a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-link">
+                    <h4> Seguinos </h4>
+                    <div class="social-link">
+
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                </div>
 
             </div>
 
+        </div>
+        <div class="derechos-reservados">
+            <small> Supermercado Dia 2024 | Todos los Derechos Reservados |
+                Diseñado y Desarrollado por Ruspil Celeste y Hernandez Wanda
+            </small>
         </div>
     </footer>
     <script type="text/javascript" src="./script.js"></script>
