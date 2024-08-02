@@ -25,8 +25,14 @@ buttomEnviar.addEventListener("click", (e)=>{
     datosForm.push(inputTelefono.value);
     datosForm.push(inputMensaje.value);
 
-    let blob = new Blob ([datosForm], {type: "text/plain;charset=utf-8"})
-    saveAs(blob, "datosForm.txt")
-
+    if (inputNombre.value =='' || inputApellido.value==''||inputEmail.value==''|| inputTelefono =='') {
+        alert("Porfavor, complete los campos vacios.");
+    }else{
+        let blob = new Blob ([datosForm], {type: "text/plain;charset=utf-8"})
+        saveAs(blob, "datosForm.txt");
+        alert("Formulario enviado correctamente!");
+ 
+    }
+    
     
 })
