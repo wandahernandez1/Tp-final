@@ -91,6 +91,8 @@ function crearCard(producto, precios, stock, imagenes) {
 
     }
 
+
+
     //Creo el evento EventListener para el boton
     let sumaPrecios = 0;
     let botonAgregar = document.querySelectorAll('.btn-agregar');
@@ -101,9 +103,9 @@ function crearCard(producto, precios, stock, imagenes) {
             let cantidad = 0;
 
             if (cantidadInput) {
-                cantidad = cantidadInput.value;
+                cantidad = parseInt(cantidadInput.value);
             }
-            if (cantidad <= 0) {
+            if (isNaN(cantidad) || cantidad <= 0 || !Number.isInteger(cantidad)) {
                 alert('Porfavor, ingrese una cantidad valida.');
                 return;
             }
@@ -171,6 +173,5 @@ function actualizarCarrito() {
     totalDiv.textContent = `Total de la compra: $ ${totalCompra}`;
     productosLista.appendChild(totalDiv);
 }
-
 // Llamada a la función para crear las tarjetas
 crearCard(arrProductos, arrPrecioProducto, arrStock, arrImagenes);
